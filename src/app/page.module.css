@@ -7,12 +7,12 @@
   --button-secondary-hover: #f2f2f2;
 
   display: grid;
+  padding: 80px;
   grid-template-rows: 20px 1fr 20px;
   align-items: center;
   justify-items: center;
-  min-height: 100svh;
-  padding: 80px;
   gap: 64px;
+  min-height: 100svh;
   font-family: var(--font-geist-sans);
 }
 
@@ -29,17 +29,17 @@
 
 .main {
   display: flex;
+  grid-row-start: 2;
   flex-direction: column;
   gap: 32px;
-  grid-row-start: 2;
 }
 
 .main ol {
-  font-family: var(--font-geist-mono);
-  padding-left: 0;
   margin: 0;
   font-size: 14px;
+  padding-left: 0;
   line-height: 24px;
+  font-family: var(--font-geist-mono);
   letter-spacing: -0.01em;
   list-style-position: inside;
 }
@@ -49,11 +49,11 @@
 }
 
 .main code {
-  font-family: inherit;
-  background: var(--gray-alpha-100);
   padding: 2px 4px;
+  background: var(--gray-alpha-100);
   border-radius: 4px;
   font-weight: 600;
+  font-family: inherit;
 }
 
 .ctas {
@@ -62,25 +62,28 @@
 }
 
 .ctas a {
-  appearance: none;
-  border-radius: 128px;
+  display: flex;
   height: 48px;
   padding: 0 20px;
+  font-size: 16px;
   border: none;
   border: 1px solid transparent;
-  transition: background 0.2s, color 0.2s, border-color 0.2s;
-  cursor: pointer;
-  display: flex;
-  align-items: center;
   justify-content: center;
-  font-size: 16px;
-  line-height: 20px;
+  align-items: center;
+  appearance: none;
+  transition:
+    background 0.2s,
+    color 0.2s,
+    border-color 0.2s;
+  cursor: pointer;
+  border-radius: 128px;
   font-weight: 500;
+  line-height: 20px;
 }
 
 a.primary {
-  background: var(--foreground);
   color: var(--background);
+  background: var(--foreground);
   gap: 8px;
 }
 
@@ -90,8 +93,8 @@ a.secondary {
 }
 
 .footer {
-  grid-row-start: 3;
   display: flex;
+  grid-row-start: 3;
   gap: 24px;
 }
 
@@ -142,9 +145,9 @@ a.secondary {
   }
 
   .ctas a {
-    font-size: 14px;
     height: 40px;
     padding: 0 16px;
+    font-size: 14px;
   }
 
   a.secondary {
@@ -153,8 +156,8 @@ a.secondary {
 
   .footer {
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
+    align-items: center;
   }
 }
 
