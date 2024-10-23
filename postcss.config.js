@@ -1,7 +1,7 @@
 /* eslint-disable @typescript-eslint/no-require-imports */
 module.exports = {
-  plugins: [
-    require('postcss-sorting')({
+  plugins: {
+    'postcss-sorting': {
       "order": [
         "custom-properties",
         "dollar-variables",
@@ -31,6 +31,6 @@ module.exports = {
         "box-shadow"
       ],
       "unspecified-properties-position": "bottom"
-    })
-  ]
+    }
+  }
 };
